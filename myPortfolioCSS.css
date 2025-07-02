@@ -1,0 +1,239 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background: #f9f9f9;
+}
+
+header {
+  background-image: url(mynew3d.jpg);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px 20px;
+}
+
+.portfolio-items {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 300px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+}
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+body.dark-mode header,
+body.dark-mode footer {
+  background: #1f1f1f;
+}
+body.dark-mode .card {
+  background: #1e1e1e;
+  border-color: #444;
+}
+
+/* Smooth Animation */
+* {
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .portfolio-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+.btn {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: #0056b3;
+}
+#intro {
+  padding: 60px 20px;
+  text-align: center;
+  background: #eee;
+  border-radius: 30px;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 2s forwards;
+}
+
+.fade-in.delay-1 {
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.social-links {
+  margin-top: 20px;
+  text-align: center;
+}
+.social-links a {
+  margin: 0 10px;
+  font-size: 24px;
+  color: #333;
+  text-decoration: none;
+}
+.social-links a:hover {
+  color: #007bff;
+}
+body.dark-mode .social-links a {
+  color: #ccc;
+}
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.filter-buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+.filter-buttons button:hover {
+  background: #007bff;
+}
+#testimonials {
+  padding: 50px 20px;
+  background: #f1f1f1;
+  text-align: center;
+}
+
+.testimonial-slider {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.testimonial {
+  display: none;
+  font-style: italic;
+}
+
+.testimonial.active {
+  display: block;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+#skills {
+  padding: 40px 20px;
+  background: #fff;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 25px;
+}
+
+.progress {
+  width: 0;
+  transition: width 1.5s ease-in-out;
+  background: #007bff;
+  color: white;
+  text-align: right;
+  padding: 3px 10px;
+  height: 100%;
+  border-radius: 20px 0 0 20px;
+
+}
+#blog {
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.blog-posts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.post {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+}
+
+.post h3 {
+  margin-top: 0;
+}
+
+.post a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.post a:hover {
+  text-decoration: underline;
+}

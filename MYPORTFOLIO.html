@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tilitygrafix | Portfolio</title>
+  <link rel="stylesheet" href="myPortfolioCSS.css" />
+  <!-- the link below is for styling social media handle logos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- the link below is for styling animations -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+</head>
+<body>
+  <header>
+  <h1>TILITYGRAFIX</h1>
+  <p>Web Developer | Graphic Designer | Virtual Assistant</p>
+  <button id="darkModeToggle">Toggle Dark Mode</button>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+<script>
+  document.getElementById('darkModeToggle').onclick = () => {
+    document.body.classList.toggle('dark-mode');
+  };
+</script>
+  </header>
+<section id="intro">
+  <h2 class="fade-in">Hi, I'm Ezechi Chigozie Franklin</h2>
+  <p class="fade-in delay-1">I build websites, create designs, and assist virtually.</p>
+</section>
+  <section id="about" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>Hi, I'm Ezechi Chigozie Franklin, a psychology graduate from the University of Uyo with a passion for tech. I leverage my skills in web development and graphic design to craft innovative solutions, while kicking a ball around on the pitch. When I'm not coding or playing football, I'm probably jamming to good music or brainstorming ways to tackle real-life problems with tech. Let's connect!</p>
+    <a href="EzechiChigozieFranklinCV.pdf" download class="btn">Download Resume</a>
+  </section>
+  <section id="skills" data-aos="fade-up">
+  <h2>My Skills Proficiency Levels</h2>
+  <div class="skill">
+    <h4>Web Development</h4>
+    <div class="progress-bar"><div class="progress" style="width: 90%;">90%</div></div>
+  </div>
+  <div class="skill">
+    <h4>Graphic Design</h4>
+    <div class="progress-bar"><div class="progress" style="width: 85%;">95%</div></div>
+  </div>
+  <div class="skill">
+    <h4>Virtual Assistance</h4>
+    <div class="progress-bar"><div class="progress" style="width: 95%;">95%</div></div>
+  </div>
+</section>
+
+<!--
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-items">
+      <!-- Add project cards here -->
+      <!--<div class="card">
+        <img src="NightParty copyMRTRUST.jpg" alt="Project 1" height="300px" width="300px" />
+        <h3>Project Title</h3>
+        <p>Dinner party flier .
+        <a href="#">View Project</a></p>
+      </div>
+    </div>
+    </section> -->
+    <section id="portfolio">
+  <h2>Portfolio</h2>
+  <div class="filter-buttons">
+    <button onclick="filterProjects('all')">All</button>
+    <button onclick="filterProjects('web')">Web</button>
+    <button onclick="filterProjects('design')">Design</button>
+    <button onclick="filterProjects('va')">VA</button>
+  </div>
+
+  <div class="portfolio-items">
+    <div class="card web">
+      <img src="pureSkin9 copy.jpg" alt="Web Project" height="300px" width="300px" />
+      <h3>Web Projects</h3>
+    </div>
+    <div class="card design">
+      <img src="NightParty copy3.jpg" alt="Design Project" height="300px" width="300px" />
+      <h3>Grafix Designs</h3>
+    </div>
+    <div class="card va">
+      <img src="PURESKINF2 copy.jpg" alt="VA Task" height="300px" width="300px"/>
+      <h3>VA Tasks</h3>
+    </div>
+    <!-- Add more projects with corresponding class -->
+  </div>
+</section>
+<section id="testimonials">
+  <h2>What The Community say about Us</h2>
+  <div class="testimonial-slider">
+    <div class="testimonial active">
+      <p>"Fantastic design work! Delivered on time and exceeded expectations."</p>
+      <h4>- Matryoshka</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Very professional and helpful. Made my website look amazing."</p>
+      <h4>- Mr. Hybrid</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Great virtual assistant — organized, reliable, and efficient!"</p>
+      <h4>- Papa Amos</h4>
+    </div>
+  </div>
+</section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Website Design & Development</li>
+      <li>Graphic Design (Logos, Posters, Branding)</li>
+      <li>Virtual Assistance (Admin, Scheduling, Emails)</li>
+    </ul>
+  </section>
+<section id="blog">
+  <h2>Tips & Insights</h2>
+  <div class="blog-posts">
+    <div class="post" data-aos="fade-up">
+      <h3>How to Make a Great First Impression with Your Website</h3>
+      <p>First impressions matter. Here's how to make your homepage stand out...</p>
+      <a href="howtomakeimpression.html">Read More</a>
+    </div>
+    <div class="post" data-aos="fade-up" data-aos-delay="100">
+      <h3>Top 5 Tools Every Virtual Assistant Should Know</h3>
+      <p>Boost productivity and stay organized with these essential tools...</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+</section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+<div class="social-links">
+  <a href="https://www.linkedin.com/in/franktility747" target="_blank"><i class="fab fa-linkedin"></i></a>
+  <a href="https://https://www.instagram.com/franktility?igsh=MWdhMzgxNXRqdHl6Yw==" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="mailto:franktilityf5@gmail.com"><i class="fas fa-envelope"></i></a>
+</div>
+      <p>&copy; 2025 Tilitygrafix</p>
+  </footer>
+  <script>
+  function filterProjects(category) {
+    const items = document.querySelectorAll('.portfolio-items .card');
+    items.forEach(item => {
+      item.style.display =
+        category === 'all' || item.classList.contains(category) ? 'block' : 'none';
+        });
+  }
+</script>
+<script>
+  let current = 0;
+  const testimonials = document.querySelectorAll('.testimonial');
+
+  function showTestimonial(index) {
+    testimonials.forEach(t => t.classList.remove('active'));
+    testimonials[index].classList.add('active');
+  }
+
+  setInterval(() => {
+    current = (current + 1) % testimonials.length;
+    showTestimonial(current);
+  }, 4000); // Change slide every 4 seconds
+</script>
+<script>
+  function animateSkills() {
+    const section = document.getElementById('skills');
+    const bars = section.querySelectorAll('.progress');
+
+    const sectionTop = section.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if (sectionTop < screenHeight - 100) {
+      bars.forEach(bar => {
+        const value = bar.getAttribute('style').match(/width:\s*(\d+)%/)[1];
+        bar.style.width = value + '%';
+      });
+
+      window.removeEventListener('scroll', animateSkills);
+    }
+  }
+
+  window.addEventListener('scroll', animateSkills);
+</script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
